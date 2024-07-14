@@ -31,6 +31,7 @@ const Interest = () => {
                 Text={item.text}
                 bg={item.bg}
                 circleColor={item.circleColor}
+                key={index}
                 />
             ))
         }

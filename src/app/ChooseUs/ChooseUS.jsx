@@ -9,11 +9,12 @@ const ChooseUS = () => {
       <span className='text-6xl font-semibold text-[#0F2F64]'>Why Choose Us ?</span>
       <div className='flex justify-around w-full max-[900px]:flex-col max-[900px]:items-center gap-5'>
         {
-            data.map((item)=>(
+            data.map((item,index)=>(
                 <Card 
                 circleColor={item.circleColor}
                 header={item.header}
                 text={item.text}
+                key={index}
                 />
             ))
         }
